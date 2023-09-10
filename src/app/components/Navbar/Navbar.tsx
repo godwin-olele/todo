@@ -5,9 +5,9 @@ import { IconButton } from '@mui/material';
 
 export default function Navbar() {
     return (
-        <div className='w-full h-[72px] bg-white border px-16 flex justify-between items-center'>
+        <div className='w-full h-[72px] bg-white border-b border-[#efefef] px-16 flex justify-between items-center'>
             <h1 className='inter-font text-[24px] font-[700]'>Todo</h1>
-            <div className='flex items-center space-x-7'>
+            <div className='flex items-center space-x-5'>
                 <IconButton>
                     <Image src={Assets.setting} alt='' width={20} height={20} />
                 </IconButton>

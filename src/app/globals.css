@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -27,6 +28,35 @@
     rgb(var(--background-start-rgb));
 } */
 
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
 .inter-font {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.rc-time-picker-input,
+.rc-time-picker {
+  display: none;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination li.active {
+  font-weight: bold;
+  color: #007bff;
 }
